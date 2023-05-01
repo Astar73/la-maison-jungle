@@ -1,3 +1,5 @@
+import '../styles/Cart.css'
+
 export const Cart = () => {
     const monsteraPrice = 8
     const ivyPrice = 10
