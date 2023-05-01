@@ -1,7 +1,7 @@
 import { Banner } from './Banner'
 import { Cart } from './Cart'
 
-function App() {
+export const App = () => {
     return (
         <div className="App">
             <Banner />
@@ -9,5 +9,3 @@ function App() {
         </div>
     )
 }
-
-export default App
