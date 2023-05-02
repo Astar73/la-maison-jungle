@@ -34,6 +34,7 @@ export const plantList = [
         name: 'basilique',
         category: 'extérieur',
         id: '7ie',
+        isSpecialOffer: true,
     },
     {
         name: 'aloe',
