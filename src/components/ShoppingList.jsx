@@ -21,7 +21,7 @@ export const ShoppingList = () => {
                 {plantList.map((plant) => (
                     <li key={plant.id} className='lmj-plant-item'>
                         {plant.name}
-                        {plant.isBestSale && <span>🔥</span>}
+                        {plant.isSpecialOffer && <div className='lmj-sales'>Soldes</div>}
                     </li>
                 ))}
             </ul>
