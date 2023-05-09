@@ -1,11 +1,15 @@
 import { CareScale } from './CareScale'
 import '../styles/PlantItem.css'
 
-export const PlantItem = (name, cover, id, light, water) => {
+export const PlantItem = ({ name, cover, id, light, water }) => {
     return (
-        <div>
-            <CareScale careType="water" scaleValue={plant.water} />
-            <CareScale careType="light" scaleValue={plant.light} />
-        </div>
+        <li key={id} className="lmj-plant-item">
+            <img className="lmj-plant-item-cover" src={cover} alt={`${name} cover`} />
+            {name}
+            <div>
+                <CareScale careType="water" scaleValue={water} />
+                <CareScale careType="light" scaleValue={light} />
+            </div>
+        </li>
     )
 }
