@@ -8,9 +8,8 @@ import '../styles/Layout.css'
 
 export const App = () => {
     const [cart, updateCart] = useState([])
-
     return (
-        <div className="App">
+        <div>
             <Banner>
                 <img src={logo} alt="La maison jungle" className="lmj-logo" />
                 <h1 className="lmj-title">La maison jungle</h1>
