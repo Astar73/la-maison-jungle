@@ -13,7 +13,7 @@ export const Cart = ({ cart, updateCart }) => {
             <button className="lmj-cart-toggle-button" onClick={() => setIsOpen(false)}>
                 Fermer
             </button>
-            {cart.lenght > 0 ? (
+            {cart.length > 0 ? (
                 <div>
                     <h2>Panier</h2>
                     <ul>
@@ -23,7 +23,7 @@ export const Cart = ({ cart, updateCart }) => {
                             </div>
                         ))}
                     </ul>
-                    <h3>Total : {total}€</h3>
+                    <h3>Total :{total}€</h3>
                     <button onClick={() => updateCart([])}>Vider le panier</button>
                 </div>
             ) : (
